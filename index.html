@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fondo de pantalla</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      margin-top: 0;
+      padding-top: 0;
+      width: 100%;
+      margin-right: 0;
+      padding-right: 0;
+      overflow-x: hidden;
+    }
+
+    .from93to100 {
+      width: 91.67%;
+    }
+
+    .dalskj {
+      width: 50%;
+    }
+
+    .main-title {
+      font-size: 6rem;
+      line-height: 1;
+    }
+
+    .second-title {
+      font-size: 3rem;
+    }
+
+    .from95to100 {
+      width: 95%;
+    }
+
+    @media (max-width: 768px) {
+      .hide-on-small-screens {
+        display: none;
+      }
+
+      .column-on-small-screens {
+        flex-direction: column;
+      }
+
+      .adjust-size-on-small-screens {
+        width: 90%;
+      }
+
+      .adjust-width-on-small-screens {
+        width: 100%;
+      }
+
+      .adjust-overflow {
+        overflow-x: hidden;
+      }
+
+      .dalskj {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-title {
+        font-size: 3rem;
+        line-height: 1;
+      }
+
+      .second-title {
+        font-size: 2rem;
+      }
+
+      .from93to100 {
+        width: 100%;
+      }
+
+      .from95to100 {
+        width: 100%;
+      }
+    }
+
+    a {
+      color: white;
+    }
+
+    a:hover {
+      color: slategray;
+    }
+
+    .card-container {
+      padding-top: 1.25rem;
+      margin: 0 auto;
+      line-height: 1.2;
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+      align-items: center;
+      background-color: transparent;
+      transform: translateY(0);
+      transition: transform 0.3s;
+    }
+
+    .card-text {
+      color: white;
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card-img {
+      border-radius: 0.375rem;
+      width: 100%;
+      height: 40vh;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body style="overflow-x: hidden;">
+  <div
+    style="background-image: url('/src/background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh;">
+
+    <!-- MAIN -->
+    <div style="height: 100vh">
+      <div style="width: 7%;">
+        <img src="/src/alien.png" style="width:100%;object-fit: cover;margin-left: 2vw; margin-top:2vw">
+      </div>
+
+      <div
+        style="margin-left: 2.5rem; margin-right: 2.5rem;margin-top: 2.5rem; margin-bottom: 2.5rem;min-width: max-content;">
+        <div style="margin-top: 13rem; width: 66.666667%;align-items: center;justify-content: center;">
+          <div style="width: 66.666667%; flex-direction: column; margin-left: auto; margin-right: auto;">
+            <h1 class="main-title" style="--tw-text-opacity: 1;color:white; font-weight:bolder;">
+              CHIKY<br />DEE JAY
+            </h1>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="hide-on-small-screens"
+      style="display: flex; justify-content: center; align-items: center; position: fixed; right: 0; top: 0; bottom: 0; width: 8.333333%; z-index: 50; background-color: transparent;">
+      <div style="display: flex; flex-direction: column; width: 100%; height: 100%; color: white;">
+        <nav style="display: flex; flex: 1; flex-direction: column; justify-content: center; align-items: center;">
+          <ul style="list-style-type: none; padding: 0; margin: 0;">
+            <li style="margin-top: 10px;">
+              <a href="spotify.com">
+                <i class="fab fa-spotify" style="font-size: 24px;"></i>
+              </a>
+            </li>
+            <li style="margin-top: 10px;">
+              <a href="youtube.com">
+                <i class="fab fa-youtube" style="font-size: 24px;"></i>
+              </a>
+            </li>
+            <li style="margin-top: 10px;">
+              <a href="instagram.com">
+                <i class="fab fa-instagram" style="font-size: 24px;"></i>
+              </a>
+            </li>
+            <li style="margin-top: 10px;">
+              <a href="tiktok.com">
+                <i class="fab fa-tiktok" style="font-size: 24px;"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!--ABOUT-->
+    <div
+      style="--tw-bg-opacity: 1; background-color: rgb(0 0 0 / var(--tw-bg-opacity)) /* #000000 */;width:100% ; margin-bottom: 0px;">
+
+      <div style="width: 83.333333%; margin-left: auto; margin-right: auto; padding-top: 6rem">
+        <h1 class="second-title"
+          style="font-weight: 700; line-height: 1;--tw-text-opacity: 1; color: rgb(168 85 247 / var(--tw-text-opacity)) /* #a855f7 */;">
+          CHIKY DEE JAY</h1>
+        <h1 class="second-title"
+          style="line-height: 1;font-weight: 600;--tw-text-opacity: 1; color: rgb(255 255 255 / var(--tw-text-opacity)) /* #ffffff */;">
+          MUSIC PRODUCER</h1>
+      </div>
+      <div class=" column-on-small-screens"
+        style="margin-top: 3rem; display: flex; width: 75%;margin-left: 2.5rem /* 40px */;margin-right: 2.5rem;">
+
+        <div style="width: 58.33%; flex: 1; display: flex; justify-content: center; align-items: flex-start;">
+          <div style="width: 18rem; height: 18rem; margin-top: 2.5rem;">
+
+            <video loop autoplay style="width:20rem">
+              <source src="/src/flash.mp4">
+              Tu navegador no soporta el formato de video.
+            </video>
+
+          </div>
+        </div>
+        <div class="dalskj">
+          <h1 style="color: #dfecff; line-height: 1.625; font-size: 0.75rem; margin-bottom: 7rem;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere labore velit magnam quod. Optio doloribus
+            quisquam doloremque molestias ipsa expedita est tempora ad, laboriosam minima similique fuga placeat
+            voluptates
+            provident!<br /><br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sit quas voluptatibus, ducimus fuga
+            iusto
+            fugiat distinctio dolorem sint minima incidunt corporis, maiores labore. Quo, nulla? Modi quis temporibus
+            nemo?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus dolorem sunt nulla quia esse dolore amet
+            provident officia, repellendus temporibus, labore architecto optio soluta cupiditate? Reprehenderit
+            voluptatibus
+            doloremque incidunt ducimus!
+          </h1>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <!--TRANSITION-->
+    <div style="height: 3rem; width: 100%; background: linear-gradient(to bottom, black, white);">
+    </div>
+
+    <!--PLAYLIST SPOTIFY-->
+    <div style="background-color: white; width: 100%; margin-bottom: 0;">
+      <div
+        style="display: flex; align-items: center; justify-content: center; width: 58.33%; flex-direction: column; margin: 0 auto;">
+        <h1 style="color: black; font-weight: bold; font-size: 1.5rem;">No te pierdas la playlist más fiestera de
+          Argentina!</h1>
+        <div
+          style="margin-top: 1rem; width: 3rem; height: 0.5rem; border-radius: 0.125rem; background: linear-gradient(to right, #4B0082, #FFB74D);">
+        </div>
+      </div>
+      <div style="width: 80vw; margin-top: 3rem;margin-left: auto; margin-right: auto; padding-bottom: 10rem;">
+        <iframe style="border-radius: 12px;"
+          src="https://open.spotify.com/embed/playlist/6EXDhW1rD3zHizuM7uO5wh?utm_source=generator" width="100%"
+          height="500" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <!--TRANSITION2-->
+    <div style="height: 3rem; width: 100%; background: linear-gradient(to bottom, white, black);">
+    </div>
+
+    <div style="background-color: black;width: 100%">
+
+      <!--PLAYLISTS-->
+
+      <div class="from93to100">
+
+        <div style="width: 100vw; ">
+          <div
+            style="display: flex; align-items: center; justify-content: center; width: 58.333333%; flex-direction: column; margin-left: auto; margin-right: auto;">
+
+            <h1 style="color: white;font-weight: 700;font-size: 1.5rem;line-height: 2rem; margin-top: 5rem;">
+              Top Playlists</h1>
+
+            <div
+              style="margin-top: 1rem; width: 3rem; height: 0.5rem; border-radius: 0.125rem; background: linear-gradient(to right, #4B0082, #FFB74D);">
+            </div>
+          </div>
+
+          <div class="from95to100 column-on-small-screens adjust-width-on-small-screens"
+            style="display: flex;margin-top: 2.5rem;">
+
+            <div class="card-container dalskj" onmouseover="this.style.transform='translateY(-0.5rem)';"
+              onmouseout="this.style.transform='translateY(0)';">
+              <a href="https://open.spotify.com/playlist/6EXDhW1rD3zHizuM7uO5wh"
+                style="text-decoration: none;--tw-translate-y: -0.5rem; transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); transition-property: transform; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 300ms; transition-duration: 150ms;transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); background-color: transparent; margin-right: 1.25rem;align-items: center;display: flex;flex-direction: column;justify-content: center;margin-left: 1.25rem">
+                <img class="card-img" src="/src/cardsImages/card1.jpg" alt="🏎️RKT CHILL 2024🏎️" />
+                <p class="card-text">🏎️RKT CHILL 2024🏎️</p>
+              </a>
+            </div>
+
+            <div class="card-container dalskj" onmouseover="this.style.transform='translateY(-0.5rem)';"
+              onmouseout="this.style.transform='translateY(0)';">
+              <a href="https://open.spotify.com/playlist/6EXDhW1rD3zHizuM7uO5wh"
+                style="text-decoration: none;--tw-translate-y: -0.5rem; transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); transition-property: transform; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 300ms; transition-duration: 150ms;transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); background-color: transparent; margin-right: 1.25rem;align-items: center;display: flex;flex-direction: column;justify-content: center;margin-left: 1.25rem">
+                <img class="card-img" src="/src/cardsImages/card2.jpg" alt="⚡RKT 2024 LO ULTIMO⚡" />
+                <p class="card-text">⚡RKT 2024 LO ULTIMO⚡</p>
+              </a>
+            </div>
+
+            <div class="card-container dalskj" onmouseover="this.style.transform='translateY(-0.5rem)';"
+              onmouseout="this.style.transform='translateY(0)';">
+              <a href="https://open.spotify.com/playlist/6EXDhW1rD3zHizuM7uO5wh"
+                style="text-decoration: none;--tw-translate-y: -0.5rem; transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); transition-property: transform; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 300ms; transition-duration: 150ms;transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); background-color: transparent; margin-right: 1.25rem;align-items: center;display: flex;flex-direction: column;justify-content: center;margin-left: 1.25rem">
+                <img class="card-img" src="/src/cardsImages/card3.jpg" alt="🦄TECHENGUE 2024🦄" />
+                <p class="card-text">🦄TECHENGUE 2024🦄</p>
+              </a>
+            </div>
+
+            <div class="card-container dalskj" onmouseover="this.style.transform='translateY(-0.5rem)';"
+              onmouseout="this.style.transform='translateY(0)';">
+              <a href="https://open.spotify.com/playlist/6EXDhW1rD3zHizuM7uO5wh"
+                style="text-decoration: none;--tw-translate-y: -0.5rem; transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); transition-property: transform; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 300ms; transition-duration: 150ms;transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); background-color: transparent; margin-right: 1.25rem;align-items: center;display: flex;flex-direction: column;justify-content: center;margin-left: 1.25rem">
+                <img class="card-img" src="/src/cardsImages/card4.jpg" alt="💜MIX CACHENGUE 2024💜" />
+                <p class="card-text">💜MIX CACHENGUE 2024💜</p>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!--LINE-->
+      <div style="width: 83.33%; border-top: 1px solid white; height: 0.125rem; margin: 0 auto;margin-top: 5rem;"></div>
+
+      <!--BEATS-->
+      <div style="background-color: black;">
+
+        <div style="text-align: center; justify-content: center; display: flex; align-items: center;">
+          <h1 style="color:white; font-size: 1.875rem; margin-bottom: 5rem; font-weight: bold;">
+            ¿Sos artista y estás interesado en unos buenos beats?<br />¡Pasate por mi catálogo!
+          </h1>
+        </div>
+
+
+        <div class="column-on-small-screens" style="display: flex;">
+
+          <div style="width: 58.33%; flex: 1; display: flex; justify-content: center; align-items: flex-start;">
+            <div style="width: 50%; height: 18rem; margin-top: 2.5rem;">
+
+              <video loop autoplay style="width:100%">
+                <source src="/src/flash.mp4">
+                Tu navegador no soporta el formato de video.
+              </video>
+
+            </div>
+          </div>
+
+          <div class="dalskj"
+            style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+
+            <h1
+              style="--tw-text-opacity: 1; font-size: 3rem; font-weight: 800; transition: color 0.3s; color: rgb(168 85 247 / var(--tw-text-opacity));transform: translateY(0); transition: transform 0.3s;"
+              onmouseover="this.style.transform='translateY(-0.5rem)';"
+              onmouseout="this.style.transform='translateY(0)';">
+              Beats
+            </h1>
+
+            <div
+              style="line-height: 1.2; display: flex; justify-content: center; flex-direction: column; align-items: center; background-color: transparent; transform: translateY(0); transition: transform 0.3s;"
+              onmouseover="this.style.transform='translateY(-0.5rem)';"
+              onmouseout="this.style.transform='translateY(0)';">
+              <a style="font-weight: bold; font-size: 2.25rem; transition: color 0.3s; text-decoration: none; cursor: pointer;"
+                href="https://www.lau.com" onmouseover="this.style.color='#94A3B8';" onmouseout="this.style.color='';">
+                Catalogo
+              </a>
+            </div>
+
+            <div
+              style="line-height: 1.2; display: flex; justify-content: center; flex-direction: column; align-items: center; background-color: transparent; transform: translateY(0); transition: transform 0.3s;"
+              onmouseover="this.style.transform='translateY(-0.5rem)';"
+              onmouseout="this.style.transform='translateY(0)';">
+              <a style="font-weight: bold; font-size: 2.25rem; transition: color 0.3s; text-decoration: none; cursor: pointer;"
+                href={href} onmouseover="this.style.color='#94A3B8';" onmouseout="this.style.color='';">
+                Reggaeton
+              </a>
+            </div>
+
+            <div
+              style="line-height: 1.2; display: flex; justify-content: center; flex-direction: column; align-items: center; background-color: transparent; transform: translateY(0); transition: transform 0.3s;"
+              onmouseover="this.style.transform='translateY(-0.5rem)';"
+              onmouseout="this.style.transform='translateY(0)';">
+              <a style="font-weight: bold; font-size: 2.25rem; transition: color 0.3s; text-decoration: none; cursor: pointer;"
+                href={href} onmouseover="this.style.color='#94A3B8';" onmouseout="this.style.color='';">
+                AfroBeats
+              </a>
+            </div>
+
+            <div
+              style="line-height: 1.2; display: flex; justify-content: center; flex-direction: column; align-items: center; background-color: transparent; transform: translateY(0); transition: transform 0.3s;"
+              onmouseover="this.style.transform='translateY(-0.5rem)';"
+              onmouseout="this.style.transform='translateY(0)';">
+              <a style="font-weight: bold; font-size: 2.25rem; transition: color 0.3s; text-decoration: none; cursor: pointer;"
+                href={href} onmouseover="this.style.color='#94A3B8';" onmouseout="this.style.color='';">
+                Trap
+              </a>
+            </div>
+
+            <div
+              style="line-height: 1.2; display: flex; justify-content: center; flex-direction: column; align-items: center; background-color: transparent; transform: translateY(0); transition: transform 0.3s;"
+              onmouseover="this.style.transform='translateY(-0.5rem)';"
+              onmouseout="this.style.transform='translateY(0)';">
+              <a style="font-weight: bold; font-size: 2.25rem; transition: color 0.3s; text-decoration: none; cursor: pointer;"
+                href={href} onmouseover="this.style.color='#94A3B8';" onmouseout="this.style.color='';">
+                R&B
+              </a>
+            </div>
+
+            <div
+              style="line-height: 1.2; display: flex; justify-content: center; flex-direction: column; align-items: center; background-color: transparent; transform: translateY(0); transition: transform 0.3s;"
+              onmouseover="this.style.transform='translateY(-0.5rem)';"
+              onmouseout="this.style.transform='translateY(0)';">
+              <a style="font-weight: bold; font-size: 2.25rem; transition: color 0.3s; text-decoration: none; cursor: pointer;"
+                href={href} onmouseover="this.style.color='#94A3B8';" onmouseout="this.style.color='';">
+                POP
+              </a>
+            </div>
+
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <!--  <div style="background-color: white; width: 100vw; padding-top: 5rem;">
+
+      <div
+        style="display: flex; align-items: center; justify-content: center; width: 58.33%; flex-direction: column; margin: 0 auto;">
+        <h1 style="color: black; font-weight: bold; font-size: 1.5rem;">Seguime en todas mis redes!</h1>
+        <div
+          style="margin-top: 1rem; width: 3rem; height: 0.5rem; border-radius: 0.125rem; background: linear-gradient(to right, #4B0082, #FFB74D);">
+          <h1></h1>
+        </div>
+      </div>
+
+      <div style="width: 100vw; padding-left: 2.5rem; padding-right: 5rem; display: flex; padding-top: 5rem;">
+        <div style="width: 33.33%; display: flex; flex-direction: column;">
+          <Youtubee />
+          <h1
+            style="font-size: 1.5rem; color: black; margin: 0 auto; font-weight: bold; padding-top: 1rem; display: block;">
+            Youtube!</h1>
+        </div>
+        <div style="width: 33.33%; display: flex; flex-direction: column;">
+          <InstagramReel />
+          <h1
+            style="font-size: 1.5rem; color: black; margin: 0 auto; font-weight: bold; padding-top: 1rem; display: block;">
+            Instagram!</h1>
+        </div>
+        <div style="width: 33.33%; display: flex; flex-direction: column;">
+          <Tiktok />
+          <h1
+            style="font-size: 1.5rem; color: black; margin: 0 auto; font-weight: bold; padding-top: 1rem; display: block;">
+            Tiktok!</h1>
+        </div>
+      </div>
+
+      <div style="width: 100vw; padding-left: 2.5rem; padding-right: 5rem; display: flex; padding-top: 1rem;">
+        <div style="width: 33.33%; display: flex; flex-direction: column;">
+          <h1 style="font-size: 1.5rem; color: black; margin: 0 auto; font-weight: bold; padding-top: 1rem;">Youtube!
+          </h1>
+        </div>
+        <div style="width: 33.33%; display: flex; flex-direction: column;">
+          <h1 style="font-size: 1.5rem; color: black; margin: 0 auto; font-weight: bold; padding-top: 1rem;">Instagram!
+          </h1>
+        </div>
+        <div style="width: 33.33%; display: flex; flex-direction: column;">
+          <h1 style="font-size: 1.5rem; color: black; margin: 0 auto; font-weight: bold; padding-top: 1rem;">Tiktok!
+          </h1>
+        </div>
+      </div> 
+
+    </div>-->
+  </div>
+
+</body>
+
+</html>
