@@ -1,0 +1,161 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  padding-top: 0;
+  width: 100%;
+  margin-right: 0;
+  padding-right: 0;
+  overflow-x: hidden;
+}
+
+
+.from33to90{
+  width: 33.33%;
+}
+.from93to100 {
+  width: 91.67%;
+}
+
+.dalskj {
+  width: 60%;
+}
+
+.main-title {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.second-title {
+  font-size: 3rem;
+}
+
+.from95to100 {
+  width: 95%;
+}
+
+.from50to90{
+  width: 50%;
+}
+.from70to95{
+  width: 70%;
+}
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  bottom: 0; 
+  width: 8.333333%;
+  z-index: 50; 
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+
+  .sidebar {
+    display: none;
+  }
+  .from70to95{
+    width: 95%;
+  }
+  .hidden-on-small {
+    display: block;
+  }
+  .column-on-small-screens {
+    flex-direction: column;
+  }
+  .from33to90{
+    width: 90%;
+  }
+  .from50to90{
+    width: 90%;
+  }
+
+  .adjust-size-on-small-screens {
+    width: 90%;
+  }
+
+  .adjust-width-on-small-screens {
+    width: 100%;
+  }
+
+  .dalskj {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-title {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .second-title {
+    font-size: 2rem;
+  }
+
+  .from93to100 {
+    width: 100%;
+  }
+
+  .from95to100 {
+    width: 100%;
+  }
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: slategray;
+}
+.bton{
+  color:black;
+}
+.bton:hover{
+  color:rgb(44, 41, 41);
+}
+
+.card-container {
+  padding-top: 1.25rem;
+  margin: 0 auto;
+  line-height: 1.2;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  transform: translateY(0);
+  transition: transform 0.3s;
+}
+
+.card-text {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card-img {
+  border-radius: 0.375rem;
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+@font-face {
+  font-family: 'titlefont';
+  src: url('fonts/titlefont.otf') format('woff2'),
+       url('fonts/titlefont.otf') format('woff'),
+       url('fonts/titlefont.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.titlefont{
+  font-family: 'titlefont', sans-serif;
+}
