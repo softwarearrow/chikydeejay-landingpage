@@ -11,6 +11,7 @@ body {
 }
 
 
+
 .from33to90{
   width: 33.33%;
 }
@@ -29,6 +30,10 @@ body {
 
 .second-title {
   font-size: 3rem;
+}
+
+.thirdtitle{
+  font-size: 2rem;
 }
 
 .from95to100 {
@@ -98,6 +103,10 @@ body {
   .second-title {
     font-size: 2rem;
   }
+  .thirdtitle{
+    font-size: 1rem;
+  }
+  
 
   .from93to100 {
     width: 100%;
@@ -108,11 +117,11 @@ body {
   }
 }
 
-a {
+.socialmediaicons {
   color: white;
 }
 
-a:hover {
+.socialmediaicons:hover {
   color: slategray;
 }
 .bton{
@@ -158,4 +167,53 @@ a:hover {
 }
 .titlefont{
   font-family: 'titlefont', sans-serif;
+}
+@font-face {
+  font-family: 'secondtitlefont';
+  src: url('fonts/secondtitlefont.otf') format('woff2'),
+       url('fonts/secondtitlefont.otf') format('woff'),
+       url('fonts/secondtitlefont.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.secondtitlefont{
+  font-family: 'secondtitlefont', sans-serif;
+}
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .container {
+      max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+      max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+      max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+      max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+      max-width: 1536px;
+  }
+}
+footer a {
+  color: #ccc;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+footer a:hover {
+  color: white;
 }
