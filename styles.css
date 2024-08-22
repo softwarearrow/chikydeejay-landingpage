@@ -217,3 +217,18 @@ footer a {
 footer a:hover {
   color: white;
 }
+.top-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 1000;
+}
+.color-change {
+  width: 200px; /* Ajusta el tamaño de la imagen */
+  transition: filter 0.3s ease;
+}
+
+.color-change:hover {
+  filter: grayscale(100%) brightness(50%);
+}
