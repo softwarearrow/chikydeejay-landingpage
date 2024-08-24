@@ -12,9 +12,10 @@ body {
 
 
 
-.from33to90{
+.from33to90 {
   width: 33.33%;
 }
+
 .from93to100 {
   width: 91.67%;
 }
@@ -32,20 +33,22 @@ body {
   font-size: 3rem;
 }
 
-.thirdtitle{
-  font-size: 2rem;
+.thirdtitle {
+  font-size: 2.5rem;
 }
 
 .from95to100 {
   width: 95%;
 }
 
-.from50to90{
+.from50to90 {
   width: 50%;
 }
-.from70to95{
+
+.from70to95 {
   width: 70%;
 }
+
 .sidebar {
   height: 100vh;
   position: fixed;
@@ -54,9 +57,9 @@ body {
   justify-content: center;
   align-items: center;
   right: 0;
-  bottom: 0; 
+  bottom: 0;
   width: 8.333333%;
-  z-index: 50; 
+  z-index: 50;
   background-color: transparent;
 }
 
@@ -65,19 +68,24 @@ body {
   .sidebar {
     display: none;
   }
-  .from70to95{
+
+  .from70to95 {
     width: 95%;
   }
+
   .hidden-on-small {
     display: block;
   }
+
   .column-on-small-screens {
     flex-direction: column;
   }
-  .from33to90{
+
+  .from33to90 {
     width: 90%;
   }
-  .from50to90{
+
+  .from50to90 {
     width: 90%;
   }
 
@@ -103,10 +111,11 @@ body {
   .second-title {
     font-size: 2rem;
   }
-  .thirdtitle{
-    font-size: 1rem;
+
+  .thirdtitle {
+    font-size: 1.5rem;
   }
-  
+
 
   .from93to100 {
     width: 100%;
@@ -124,11 +133,13 @@ body {
 .socialmediaicons:hover {
   color: slategray;
 }
-.bton{
-  color:black;
+
+.bton {
+  color: black;
 }
-.bton:hover{
-  color:rgb(44, 41, 41);
+
+.bton:hover {
+  color: rgb(44, 41, 41);
 }
 
 .card-container {
@@ -157,78 +168,113 @@ body {
   height: 40vh;
   object-fit: cover;
 }
+
 @font-face {
   font-family: 'titlefont';
   src: url('fonts/titlefont.otf') format('woff2'),
-       url('fonts/titlefont.otf') format('woff'),
-       url('fonts/titlefont.otf') format('truetype');
+    url('fonts/titlefont.otf') format('woff'),
+    url('fonts/titlefont.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-.titlefont{
+
+.titlefont {
   font-family: 'titlefont', sans-serif;
 }
+
 @font-face {
   font-family: 'secondtitlefont';
   src: url('fonts/secondtitlefont.otf') format('woff2'),
-       url('fonts/secondtitlefont.otf') format('woff'),
-       url('fonts/secondtitlefont.otf') format('truetype');
+    url('fonts/secondtitlefont.otf') format('woff'),
+    url('fonts/secondtitlefont.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-.secondtitlefont{
+
+.secondtitlefont {
   font-family: 'secondtitlefont', sans-serif;
 }
+
 .container {
   width: 100%;
 }
+
 @media (min-width: 640px) {
   .container {
-      max-width: 640px;
+    max-width: 640px;
   }
 }
+
 @media (min-width: 768px) {
   .container {
-      max-width: 768px;
+    max-width: 768px;
   }
 }
+
 @media (min-width: 1024px) {
   .container {
-      max-width: 1024px;
+    max-width: 1024px;
   }
 }
+
 @media (min-width: 1280px) {
   .container {
-      max-width: 1280px;
+    max-width: 1280px;
   }
 }
+
 @media (min-width: 1536px) {
   .container {
-      max-width: 1536px;
+    max-width: 1536px;
   }
 }
+
 footer a {
-  color: #ccc;
+  color: white;
   margin: 0 15px;
   text-decoration: none;
   font-size: 20px;
 }
 
 footer a:hover {
-  color: white;
+  color: #ccc;
 }
+
 .top-image {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; 
+  width: 100%;
   z-index: 1000;
 }
+
 .color-change {
-  width: 200px; /* Ajusta el tamaño de la imagen */
+  width: 200px;
+  /* Ajusta el tamaño de la imagen */
   transition: filter 0.3s ease;
 }
 
 .color-change:hover {
   filter: grayscale(100%) brightness(50%);
+}
+
+.transition {
+  --tw-translate-y: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-duration: 150ms;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-image: url('src/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
