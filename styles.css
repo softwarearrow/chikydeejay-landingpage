@@ -3,6 +3,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: scroll;
 }
 
 main {
@@ -25,36 +26,9 @@ main::after{
     background-color: rgba(255, 255, 255, 0.85);
     z-index: -1;
 }
-
-.main-image-section h1 {
-    position: absolute;
-    top: 35%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    padding: 10px 20px;
-    font-family: "Akira Expanded", Arial, Helvetica, sans-serif;
-    font-weight: 900;
-    font-size: 80px;
-    letter-spacing: -8px;
-    margin: 0;
-    line-height: -2rem;
-}
-
-.main-image-section h1 span {
-    font-weight: 900;
-    color: transparent;
-    text-shadow: 2px 0 black;
-}
-
 .main-image-section img {
     width: 100%;
     height: auto;
-}
-
-.main-image-section {
-    position: relative;
-    height: fit-content;
 }
 .biography{
     height: fit-content;
@@ -94,7 +68,7 @@ main::after{
 .social-div h4{
     font-family: "Akira Expanded", Arial;
     font-weight: 900;
-    font-size: 1.2vw;
+    font-size: 1.6vw;
     margin: 0;
 }
 .icons{
@@ -149,8 +123,7 @@ main::after{
     justify-content: center;
 }
 .youtube-videos iframe{
-    width: 400px;
-    height: 200px;
+    width: 45%;
     width: fit-content;
     margin: 0.5rem;
 }
@@ -205,7 +178,7 @@ main::after{
     text-align: center;
     text-decoration: none;
     color: #333;
-    border-radius: 8px;
+    border-radius: 5px;
     overflow: hidden;
     transition: transform 0.3s ease;
 } 
@@ -224,31 +197,153 @@ main::after{
     transform: scale(1.05);
 }
 .next-dates{
-    height: 100vh
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    width: 100%;
+    height: fit-content;
 }
-.next-dates-title{
-    margin-top: 2rem;
+.next-dates-title{   
+    display: flex;
+    justify-items: center;
+}
+.next-dates-title img{
     width: 30%;
     margin-left: auto;
     margin-right: auto;
 }
-.right{
-    margin-bottom: -3rem;
-    height: auto;
-    width: fit-content;
-    margin-right: -2rem;
+.date-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.left{
-    z-index: 10;
+
+.date {
+    padding: 20px;
+    border-radius: 10px;
+    width: 25%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+/* PROVINCIA */
+.date p{
+    margin: 0;
+    font-weight: 700;
+}
+.date p img{
+    width: 15px;
+}
+/* FECHA */
+.date h6{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+/* LUGAR */
+.date h2{
+    font-weight: 900;
+    margin: 0;
+}
+.footer-section{
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
     height: fit-content;
-    margin-bottom: -100px;
-    width: fit-content;
-    margin-left: -2rem;
+    background-size: cover;
+    background-image: url(src/footer-bg.png);
 }
-.next-dates-title div{
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 800;
-    font-size: 6.5rem;
-    font-family: Arial, Helvetica, sans-serif;
+.footer-section-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.booking-img{
+    width: 60%;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.booking-img img{
+    width: 60%;
+}
+.booking-div h1{
+    font-size: 8vh;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.booking-input{
+    width: 50%;
+    margin-left: auto;
+}
+.booking-input h4{
+    font-size: 2vh;
+    color: white;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.booking-div{
+    padding-top:5rem ;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.booking-input img{
+    width: 2vh;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    background-color: rgba(255, 255, 255, 0.131);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    text-align: left;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    width: fit-content;
+  }
+  
+  .contact-form button:hover {
+    color: #ddd;
+  }
+  
+.footerr{
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footerr img{
+    width: 12.5%;
+    margin-bottom: 1rem;
+}
+.footerr h5{
+    margin: 1rem;
+    font-size: 2.4vh;
+    color: white;
 }

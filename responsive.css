@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+    .bio-image-1{
+        margin-right: -0.4rem;
+    }
+    .bio-image-2{
+        margin-left: -0.5rem;
+    }
+    .social-div{
+        margin-top: -2rem;
+    }    
+    .youtube-videos iframe{
+        width: 325px;
+    }
+    .container p{
+        display: none;
+    }
+}
