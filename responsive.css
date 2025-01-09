@@ -8,10 +8,66 @@
     .social-div{
         margin-top: -2rem;
     }    
-    .youtube-videos iframe{
-        width: 325px;
-    }
+
     .container p{
         display: none;
     }
 }
+@media(max-width:320px){
+    .painted-title{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .playlists-videos h2{
+        margin-bottom: 0;
+    }
+    .youtube-videos iframe{
+        height: 100px;
+        width: 140px;
+    }
+    .container{
+        width: 100%;
+        gap: 4px;
+    }
+}
+@media(min-width:427px)and(max-width:626px){
+        .painted-title{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .playlists-videos h2{
+        margin-bottom: 0;
+    }
+    .youtube-videos iframe{
+        height: 100px;
+        width: 140px;
+    }
+    .container{
+        width: 100%;
+        gap: 4px;
+    }
+    .youtube-videos iframe{
+        width: 200px; 
+        height: 140px;
+    }
+}
+@media(min-width: 426px) and (max-width: 768px){
+    .painted-title{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .playlists-videos h2{
+        margin-bottom: 0.5rem;
+    }
+    .container{
+        width: 100%;
+        gap: 4px;
+    }
+    .playlists{
+        margin-top: 1.5rem;
+    }
+    .social-div{
+        margin-top: -4rem;
+    }
+}
+
