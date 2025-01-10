@@ -3,8 +3,11 @@ html {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    overflow: scroll;
+    scrollbar-width: none;
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 main {
     position: relative;
@@ -97,14 +100,6 @@ main::after{
 .icons a:hover {
     transform: scale(1.05);
 }
-
-
-
-
-
-
-
-
 .playlists{
     width: 100%;
     position: relative;
@@ -278,14 +273,14 @@ main::after{
     justify-content: center;
 }
 .booking-img{
-    width: 60%;
+    width: 50%;
     margin-right: auto;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 .booking-img img{
-    width: 40%;
+    width: 50%;
 }
 .booking-div h1{
     font-size: 8vh;
@@ -354,7 +349,8 @@ main::after{
     align-items: center;
 }
 .footerr img{
-    width: 12.5%;
+    width: 8%;
+    padding: 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
 }

@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media(max-width:500px){
     .bio-image-1{
         margin-right: -0.4rem;
     }
@@ -7,18 +7,12 @@
     }
     .social-div{
         margin-top: -2rem;
-    }    
-
+    }
     .container p{
         display: none;
     }
-}
-@media(max-width:320px){
     .painted-title{
         margin-top: 0;
-        margin-bottom: 0;
-    }
-    .playlists-videos h2{
         margin-bottom: 0;
     }
     .youtube-videos iframe{
@@ -30,44 +24,87 @@
         gap: 4px;
     }
 }
-@media(min-width:427px)and(max-width:626px){
-        .painted-title{
-        margin-top: 0;
-        margin-bottom: 0;
+@media(min-width:501px){
+    .icons{
+        margin-top: 7rem;
+    }
+    .youtube-videos iframe{
+        height: 160px;
+        width: 160px;
     }
     .playlists-videos h2{
         margin-bottom: 0;
-    }
-    .youtube-videos iframe{
-        height: 100px;
-        width: 140px;
     }
     .container{
         width: 100%;
         gap: 4px;
     }
-    .youtube-videos iframe{
-        width: 200px; 
-        height: 140px;
-    }
-}
-@media(min-width: 426px) and (max-width: 768px){
+    .item p{
+        font-size: 0.8rem;
+    } 
     .painted-title{
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
     }
     .playlists-videos h2{
-        margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
     }
-    .container{
-        width: 100%;
-        gap: 4px;
-    }
-    .playlists{
-        margin-top: 1.5rem;
-    }
-    .social-div{
-        margin-top: -4rem;
+    .playlists-videos{
+        margin-bottom: -1rem;
     }
 }
-
+@media(min-width:625px){
+    .painted-title{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .youtube-videos iframe{
+        height: 200px;
+        width: 160px;
+    }
+}
+@media(min-width:768px){
+    .painted-title{
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    .container{
+        width: 90%;
+        gap: 20px;
+    }
+    .icons{
+        margin-top: 2rem;
+    }
+    .youtube-videos{
+        width: 90%;
+    }
+    .youtube-videos iframe{
+        height: 350px;
+        width: 160px;
+    }
+    .playlists-videos h2{
+        margin-bottom: 0;
+    }
+    .painted-title{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .item p{
+        font-size: 0.8rem;
+    } 
+    .playlists-videos h2{
+    margin-bottom: 0.5rem;
+    }
+    .playlists-videos{
+        margin-bottom: -1rem;
+    }
+    .item p{
+        font-size: 1.5rem;
+    } 
+}
+@media(min-width:1660px){
+    .youtube-videos iframe{
+        height: 480px;
+        width: 160px;
+    }
+}
