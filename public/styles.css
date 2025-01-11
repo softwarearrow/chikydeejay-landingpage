@@ -1,0 +1,364 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+main {
+    position: relative;
+    background-image: url('src/elements/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-backdrop-filter:grayscale(100%);
+    backdrop-filter: inherit;
+    z-index: 1;
+}
+main::after{
+    position:absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: -1;
+}
+.main-image-section img {
+    width: 100%;
+    height: auto;
+}
+.biography{
+    height: fit-content;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+.biography-images{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+
+}
+.bio-image-1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 45vw;
+    z-index: 1;
+    margin-right: -1rem;
+}
+.bio-image-2{
+    width: 37vw;
+    margin-left: -1rem;
+    z-index: 0;
+    transform: rotate(-5deg);
+    margin-bottom: 2rem;
+}
+.social-div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    align-items: baseline;
+}
+.social-div h4{
+    font-family: "Akira Expanded", Arial;
+    font-weight: 900;
+    font-size: 1.6vw;
+    margin: 0;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+.icon{
+    width: 3.5vw;
+    height: auto;
+    margin-right: 10px;
+}
+.division-image{
+    width: 100%;
+}
+.icons a{
+    transition: transform 0.3s ease;
+    width: fit-content;
+    height: auto;
+    cursor: pointer;
+    z-index: 10;
+}
+.icons a:hover {
+    transform: scale(1.05);
+}
+.playlists{
+    width: 100%;
+    position: relative;
+    height: fit-content;
+    margin-top: -2rem;
+}
+.black-bg{
+    width: 100%;
+    height: auto;
+}
+.playlists-videos{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.youtube-videos{
+    margin-left: auto;
+    margin-right: auto;    
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.youtube-videos iframe{
+    width: 1000px;
+    height: auto;
+    width: fit-content;
+    margin: 0.5rem;
+    flex: 1;
+    height: 200px;
+}
+.painted-title{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: fit-content;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+.painted-title img{
+    width: 100%;
+}
+.painted-title h3{
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    margin: 0;
+    font-size: 1.2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.playlists-videos h2{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5vw;
+    font-weight: 900;
+    color: white;
+    width: fit-content;
+    margin-bottom: 2rem;
+    font-family: Arial;
+}
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    width: 80%;
+    padding: 20px;
+    justify-content: start;
+    align-items: center;
+    box-sizing: border-box;
+}
+.item{
+    align-self: flex-start;
+    flex: 1 1 calc(100% - 40px);
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+} 
+.item img{
+    width: 100%;
+    height: auto;
+    display: block;
+} 
+.item p{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+} 
+.item:hover {
+    transform: scale(1.05);
+}
+.next-dates{
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    width: 100%;
+    height: fit-content;
+}
+.next-dates-title{   
+    display: flex;
+    justify-items: center;
+}
+.next-dates-title img{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.date-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.date {
+    padding: 20px;
+    border-radius: 10px;
+    width: 25%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+/* PROVINCIA */
+.date p{
+    margin: 0;
+    font-weight: 700;
+}
+.date p img{
+    width: 15px;
+}
+/* FECHA */
+.date h6{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+/* LUGAR */
+.date h2{
+    font-weight: 900;
+    margin: 0;
+}
+.footer-section{
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-size: cover;
+    background-image: url(src/footer-bg.png);
+}
+.footer-section-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.booking-img{
+    width: 50%;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.booking-img img{
+    width: 50%;
+}
+.booking-div h1{
+    font-size: 8vh;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.booking-input{
+    width: 50%;
+    margin-left: auto;
+}
+.booking-input h4{
+    font-size: 2vh;
+    color: white;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.booking-div{
+    padding-top:5rem ;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.booking-input img{
+    width: 2vh;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    background-color: rgba(255, 255, 255, 0.131);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: rgba(255, 255, 255, 0.131);
+    padding: 5px 10px 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: fit-content;
+    color: white;
+}
+.contact-form button:hover {
+    background-color: rgba(255, 255, 255, 0.221);
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.1); 
+    transform: translateY(-5px);
+}
+.footerr{
+    height: fit-content;
+    background-color: black;
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footerr img{
+    width: 8%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+form button{
+    text-decoration: none;
+    all: unset;
+    border: none;
+    appearance: unset;
+}
