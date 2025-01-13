@@ -14,12 +14,18 @@
         <section class="main-image-section">
             <img src="src/main-title.png"/>
         </section>
+
+
+
+
+
+
         <section class="biography">
             <div class="biography-images">
                 <img src="src/bio-image.png" alt="imagen biografia" class="bio-image-1">
             </div>
             <div class="social-div">
-                <img src="src/bio.png"       alt="biografia"        class="bio-image-2">
+                <img src="src/bio.png" alt="biografia" class="bio-image-2">
                 <div class="icons">
                     <a href="https://www.instagram.com/chikydeejay/"                         target="_blank"><img class="icon" src="src/media-icons/instagram.png" alt="instagram logo"></a>
                     <a href="https://open.spotify.com/intl-es/artist/4z5uBsnmFPLFsGa5hQvLGO" target="_blank"><img class="icon" src="src/media-icons/spotify.png"   alt="spotify logo">  </a>
@@ -28,6 +34,15 @@
                 </div>
             </div>
         </section>
+
+
+
+
+
+
+
+
+
         <section class="playlists">
             <img src="src/black-bg.png" alt="black background" class="black-bg">
             <div class="playlists-videos">
@@ -76,12 +91,13 @@
                         <div class="booking-input">
                             <h4><img src="src/phone.png" alt="phone image"> BOOKING LATAM:+54 9 3165 6545</h4>
                             <h4><img src="src/mail.png" alt="mail image"> CHIKYMUSICX@GMAIL.COM</h4>
-                            <form class="contact-form" action="/submit" method="POST">
+                            <form class="contact-form">
                                 <input type="text" name="name" placeholder="Nombre" required>
                                 <input type="email" name="email" placeholder="Email/Número" required>
                                 <textarea name="details" placeholder="Detalles del evento" required></textarea>
                                 <button type="submit">Enviar</button>
-                            </form>                            
+                            </form>
+                            <div id="formMessage" class="message"></div>                                                                                                         
                         </div>
                     </div>
                     <div class="footerr">
@@ -90,6 +106,7 @@
                 </div>              
         </section>
         
-    </main>       
+    </main> 
+    <script src="form-handler.js"></script>
 </body>
 </html>
